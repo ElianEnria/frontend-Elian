@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    color: crimson;    
+}
+/* al usar el div y contendero es para que aplique al lugar especifico que se le asigna y no a todos los contenedores en este caso */
+div.contenedor{
+    position: relative;
+    border: 3px dashed greenyellow;
+    width: 30%;
+    margin: auto;
+/* para que no ocupe toda la pantalla y el margin para que se alinie solo */
+}
+div.centro{
+    position: absolute;
+    /* para que este a la mitad */
+    top: 50%;
+    /* antes del width este objeto ocupa el espacio necesario y no el del todo el contenedor que lo contiene */
+    width: 100%;
+    /* border: 1px blue solid; */
+    text-align: center;
+    font-size: 25px;
+}
+img.imagen{
+    /* para que use todo el contenedor */
+    width: 100%;
+    opacity: .2;
+}
+

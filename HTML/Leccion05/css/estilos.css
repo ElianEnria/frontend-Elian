@@ -1,0 +1,25 @@
+ol{
+    list-style: none;
+    counter-reset: contador;
+
+}
+ol li{
+    counter-increment: contador;
+}
+ol li::before{
+    content: 'Curso ' counter(contador) ') ';
+    color: darkgoldenrod;
+
+}
+ol li::after{
+    content: '.';
+}
+
+/*
+Quitamos el stilo 
+ol li para que modifique cada de estos elementos de la lista
+
+::before este es un selctor para agregar un texto antex que se visualice el texto antes que se muestre en nuestra lista
+
+counter es un contador que tiene una variable dentro 
+*/

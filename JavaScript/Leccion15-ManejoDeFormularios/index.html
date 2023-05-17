@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo formulario en js</title>
+</head>
+<body>
+    <form id="formulario">
+        Nombre: <input type="text" name="nombre" value="Juan"/> <br>
+        Apellido: <input type="text" name="apellido" value="Perez"><br>
+    </form>
+    <button onclick="mostrarValores()">Mostrar</button> <hr>
+    <div id="valores"></div>
+
+    <script>
+        function mostrarValores(){
+            let formularioJS = document.forms['formulario'];
+            let texto = '';
+            let nombre = formularioJS['nombre'];//a travez del value
+            let apellido = formularioJS['apellido'];// de esta manera recuperamos todo el objeto
+            texto = nombre.value + '<br/>' + apellido.value;
+            //Aca debemos pasar el value, para indicar que queremos obtener en este caso el nombre y el apellido 
+            document.getElementById('valores').innerHTML = texto;
+        }
+    </script>
+</body>
+</html>
+    <!-- <script>
+        function mostrarValores(){
+            // funcion que manda a llamar al formulario para obtener los datos
+            let formularioJS = document.forms['formulario'];
+            // recorrer los elementos;
+            let texto = '';
+            for (let elementos of formularioJS){
+                texto += elementos.value + '<br/>'; //Acceder a los elementos y asi lo vamos accediendo
+            }
+            console.log(texto);
+            document.getElementById('valores').innerHTML = texto;
+        }
+    </script> -->

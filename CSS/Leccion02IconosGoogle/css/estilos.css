@@ -1,0 +1,11 @@
+.listo{
+    /* ya que de otro modo la imagen se veria feo */
+    vertical-align: bottom;
+    color: blue;
+    font-size: 2.5em;
+}
+.flecha{
+    vertical-align: bottom;
+    color: red;
+    font-size: 2.5em;
+}

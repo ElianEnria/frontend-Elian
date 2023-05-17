@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM</title>
+</head>
+<body>
+    <h1 id="titulo" style="color: aqua;">MODIFICAR IMAGEN</h1>
+    <hr/>
+    <img id="imagen" src="javascript.png" alt="javascript" >
+    <br>
+    <button onclick='modificador()'>Cambiar Imagen</button>
+    <!-- <script>
+        function modificador(){
+            document.getElementById('imagen').src = 'html5.png';
+        }
+    </script> -->
+    <script>
+        function modificador(){
+            document.getElementById('titulo').style.color = 'red';
+        }
+    </script>
+    
+</body>
+</html>
